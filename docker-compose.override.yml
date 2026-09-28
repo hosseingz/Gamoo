@@ -1,6 +1,19 @@
 version: '3.9'
 
 services:
+
+  app:
+    volumes:
+      - ./backend:/src
+
+  celery_worker:
+    volumes:
+      - ./backend:/src
+
+  celery_beat:
+    volumes:
+      - ./backend:/src
+
   frontend:
     volumes:
       - ./frontend:/app

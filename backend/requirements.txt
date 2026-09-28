@@ -19,6 +19,6 @@ django-cleanup==9.0.0
 django-solo==2.5.1
 kavenegar==1.1.2
 
-dotenv==0.9.9
+django-environ==0.11.2
 pillow==12.2.0
 jdatetime==5.2.0
