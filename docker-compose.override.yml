@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  frontend:
+    volumes:
+      - ./frontend:/app
+      - node_modules_data:/app/node_modules
+      - next_data:/app/.next
+    environment:
+      - NODE_ENV=development
+
+volumes:
+  node_modules_data:
+  next_data:
