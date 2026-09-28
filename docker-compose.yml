@@ -39,6 +39,7 @@ services:
     build:
       context: ./backend
     container_name: celery_worker
+    profiles: ["celery"]
     <<: *shared-environment
     entrypoint: [ "celery", "-A", "config", "worker", "--loglevel=info" ]
     volumes:
@@ -59,6 +60,7 @@ services:
     build:
       context: ./backend
     container_name: celery_beat
+    profiles: ["celery"]
     <<: *shared-environment
     entrypoint: [ "celery", "-A", "config", "beat", "--loglevel=info" ]
     depends_on:
