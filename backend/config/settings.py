@@ -76,6 +76,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'corsheaders',
+    'rest_framework',
+    'blog',
 ]
 
 # Optimized middleware hierarchy (WhiteNoise positioned directly under SecurityMiddleware)
